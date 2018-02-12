@@ -1,0 +1,1247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81118EB42023ACC100494EB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81118EB32023ACC100494EB6 /* AppDelegate.swift */; };
+		81118EBA2023ACC100494EB6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81118EB92023ACC100494EB6 /* GameScene.swift */; };
+		81118EBC2023ACC100494EB6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81118EBB2023ACC100494EB6 /* GameViewController.swift */; };
+		81118EBF2023ACC100494EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81118EBD2023ACC100494EB6 /* Main.storyboard */; };
+		81118EC12023ACC100494EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81118EC02023ACC100494EB6 /* Assets.xcassets */; };
+		81118EC42023ACC100494EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81118EC22023ACC100494EB6 /* LaunchScreen.storyboard */; };
+		81118ECA2023AEA800494EB6 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A14030201FC39C00103DF5 /* ReSwift.framework */; };
+		81326D5C202F8BDB00353448 /* UINavigationController+Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81326D5B202F8BDB00353448 /* UINavigationController+Completion.swift */; };
+		8158719D202506FE0033AB39 /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158719C202506FE0033AB39 /* BoardNode.swift */; };
+		815871A020251FAF0033AB39 /* CrossNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158719F20251FAF0033AB39 /* CrossNode.swift */; };
+		815871A22025227F0033AB39 /* CircleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815871A12025227F0033AB39 /* CircleNode.swift */; };
+		815871A5202526390033AB39 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815871A4202526390033AB39 /* GameState.swift */; };
+		815871B120265FF80033AB39 /* TurnAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815871B020265FF80033AB39 /* TurnAction.swift */; };
+		815871B3202660650033AB39 /* RestartAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815871B2202660650033AB39 /* RestartAction.swift */; };
+		815871B52026609C0033AB39 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815871B42026609C0033AB39 /* GameReducer.swift */; };
+		815871BD202661390033AB39 /* WarmupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815871BC202661390033AB39 /* WarmupTests.swift */; };
+		8186C1C7202CE63700846375 /* ReSwiftRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815CE8A1202BB89A000CEA38 /* ReSwiftRouter.framework */; };
+		8186C1C8202CE63700846375 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A14030201FC39C00103DF5 /* ReSwift.framework */; };
+		8186C1D5202CE7D500846375 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CC202CE7D500846375 /* Task.swift */; };
+		8186C1D6202CE7D500846375 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CC202CE7D500846375 /* Task.swift */; };
+		8186C1D7202CE7D500846375 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CD202CE7D500846375 /* NetworkError.swift */; };
+		8186C1D8202CE7D500846375 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CD202CE7D500846375 /* NetworkError.swift */; };
+		8186C1D9202CE7D500846375 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CE202CE7D500846375 /* NetworkService.swift */; };
+		8186C1DA202CE7D500846375 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CE202CE7D500846375 /* NetworkService.swift */; };
+		8186C1DB202CE7D500846375 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CF202CE7D500846375 /* NetworkTask.swift */; };
+		8186C1DC202CE7D500846375 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1CF202CE7D500846375 /* NetworkTask.swift */; };
+		8186C1DD202CE7D500846375 /* AllTaskNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1D1202CE7D500846375 /* AllTaskNetworkTask.swift */; };
+		8186C1DE202CE7D500846375 /* AllTaskNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1D1202CE7D500846375 /* AllTaskNetworkTask.swift */; };
+		8186C1DF202CE7D500846375 /* CreateTaskNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1D2202CE7D500846375 /* CreateTaskNetworkTask.swift */; };
+		8186C1E0202CE7D500846375 /* CreateTaskNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1D2202CE7D500846375 /* CreateTaskNetworkTask.swift */; };
+		8186C1E1202CE7D500846375 /* RemoveTaskNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1D3202CE7D500846375 /* RemoveTaskNetworkTask.swift */; };
+		8186C1E2202CE7D500846375 /* RemoveTaskNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1D3202CE7D500846375 /* RemoveTaskNetworkTask.swift */; };
+		8186C211202CE7E200846375 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1E6202CE7E200846375 /* AppConstant.swift */; };
+		8186C212202CE7E200846375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1E7202CE7E200846375 /* AppDelegate.swift */; };
+		8186C214202CE7E200846375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8186C1E9202CE7E200846375 /* LaunchScreen.storyboard */; };
+		8186C215202CE7E200846375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8186C1EB202CE7E200846375 /* Main.storyboard */; };
+		8186C216202CE7E200846375 /* AddTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1EF202CE7E200846375 /* AddTaskAction.swift */; };
+		8186C217202CE7E200846375 /* CreateTaskAsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F0202CE7E200846375 /* CreateTaskAsyncAction.swift */; };
+		8186C218202CE7E200846375 /* CreatingTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F1202CE7E200846375 /* CreatingTaskAction.swift */; };
+		8186C219202CE7E200846375 /* GetTasksAsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F2202CE7E200846375 /* GetTasksAsyncAction.swift */; };
+		8186C21A202CE7E200846375 /* LoadTasksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F3202CE7E200846375 /* LoadTasksAction.swift */; };
+		8186C21B202CE7E200846375 /* RemoveTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F4202CE7E200846375 /* RemoveTaskAction.swift */; };
+		8186C21C202CE7E200846375 /* RemoveTaskAsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F5202CE7E200846375 /* RemoveTaskAsyncAction.swift */; };
+		8186C21D202CE7E200846375 /* SetTasksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F6202CE7E200846375 /* SetTasksAction.swift */; };
+		8186C21E202CE7E200846375 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F7202CE7E200846375 /* AppReducer.swift */; };
+		8186C21F202CE7E200846375 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1F8202CE7E200846375 /* AppState.swift */; };
+		8186C220202CE7E200846375 /* TaskCreationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1FA202CE7E200846375 /* TaskCreationReducer.swift */; };
+		8186C221202CE7E200846375 /* TasksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1FB202CE7E200846375 /* TasksReducer.swift */; };
+		8186C222202CE7E200846375 /* TaskCreationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1FD202CE7E200846375 /* TaskCreationViewState.swift */; };
+		8186C223202CE7E200846375 /* TasksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C1FE202CE7E200846375 /* TasksState.swift */; };
+		8186C225202CE7E200846375 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C201202CE7E200846375 /* CreateTaskViewController.swift */; };
+		8186C228202CE7E200846375 /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C205202CE7E200846375 /* DetailTaskViewController.swift */; };
+		8186C229202CE7E200846375 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C206202CE7E200846375 /* TasksViewController.swift */; };
+		8186C254202CE7F300846375 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C232202CE7F200846375 /* AppConstant.swift */; };
+		8186C255202CE7F300846375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C233202CE7F200846375 /* AppDelegate.swift */; };
+		8186C256202CE7F300846375 /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C234202CE7F200846375 /* AppRoutes.swift */; };
+		8186C258202CE7F300846375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8186C236202CE7F200846375 /* LaunchScreen.storyboard */; };
+		8186C259202CE7F300846375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8186C238202CE7F200846375 /* Main.storyboard */; };
+		8186C25A202CE7F300846375 /* AddTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C23C202CE7F200846375 /* AddTaskAction.swift */; };
+		8186C25B202CE7F300846375 /* CreateTaskAsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C23D202CE7F200846375 /* CreateTaskAsyncAction.swift */; };
+		8186C25C202CE7F300846375 /* CreatingTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C23E202CE7F200846375 /* CreatingTaskAction.swift */; };
+		8186C25D202CE7F300846375 /* GetTasksAsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C23F202CE7F200846375 /* GetTasksAsyncAction.swift */; };
+		8186C25E202CE7F300846375 /* LoadTasksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C240202CE7F200846375 /* LoadTasksAction.swift */; };
+		8186C25F202CE7F300846375 /* RemoveTaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C241202CE7F200846375 /* RemoveTaskAction.swift */; };
+		8186C260202CE7F300846375 /* RemoveTaskAsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C242202CE7F200846375 /* RemoveTaskAsyncAction.swift */; };
+		8186C261202CE7F300846375 /* SetTasksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C243202CE7F200846375 /* SetTasksAction.swift */; };
+		8186C262202CE7F300846375 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C244202CE7F200846375 /* AppReducer.swift */; };
+		8186C263202CE7F300846375 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C245202CE7F200846375 /* AppState.swift */; };
+		8186C264202CE7F300846375 /* TaskCreationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C247202CE7F200846375 /* TaskCreationReducer.swift */; };
+		8186C265202CE7F300846375 /* TasksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C248202CE7F200846375 /* TasksReducer.swift */; };
+		8186C266202CE7F300846375 /* TaskCreationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C24A202CE7F200846375 /* TaskCreationViewState.swift */; };
+		8186C267202CE7F300846375 /* TasksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C24B202CE7F200846375 /* TasksState.swift */; };
+		8186C269202CE7F300846375 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C24E202CE7F200846375 /* CreateTaskViewController.swift */; };
+		8186C26C202CE7F300846375 /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C252202CE7F200846375 /* DetailTaskViewController.swift */; };
+		8186C26D202CE7F300846375 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C253202CE7F200846375 /* TasksViewController.swift */; };
+		8186C271202CEA1800846375 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C26F202CEA1800846375 /* DatePickerViewController.swift */; };
+		8186C272202CEA1800846375 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186C26F202CEA1800846375 /* DatePickerViewController.swift */; };
+		8186C273202CEA1800846375 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8186C270202CEA1800846375 /* DatePickerViewController.xib */; };
+		8186C274202CEA1800846375 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8186C270202CEA1800846375 /* DatePickerViewController.xib */; };
+		8186C276202CF57400846375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8186C275202CF57400846375 /* Assets.xcassets */; };
+		8186C277202CF57400846375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8186C275202CF57400846375 /* Assets.xcassets */; };
+		818E4B472027B8750005EAA0 /* LabelButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E4B462027B8750005EAA0 /* LabelButtonNode.swift */; };
+		818F144D2028F7D300CDB84A /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A14030201FC39C00103DF5 /* ReSwift.framework */; };
+		818F144F2028FF0800CDB84A /* GameConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F144E2028FF0800CDB84A /* GameConstant.swift */; };
+		81A14031201FC39C00103DF5 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A14030201FC39C00103DF5 /* ReSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		815871BF202661390033AB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8107885620193A3A00980C57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81118EB02023ACC100494EB6;
+			remoteInfo = Warmup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8107885E20193A3A00980C57 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81118EB12023ACC100494EB6 /* Warmup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warmup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81118EB32023ACC100494EB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81118EB92023ACC100494EB6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		81118EBB2023ACC100494EB6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		81118EBE2023ACC100494EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81118EC02023ACC100494EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81118EC32023ACC100494EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81118EC52023ACC100494EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81326D5B202F8BDB00353448 /* UINavigationController+Completion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Completion.swift"; sourceTree = "<group>"; };
+		8158719C202506FE0033AB39 /* BoardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardNode.swift; sourceTree = "<group>"; };
+		8158719F20251FAF0033AB39 /* CrossNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossNode.swift; sourceTree = "<group>"; };
+		815871A12025227F0033AB39 /* CircleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNode.swift; sourceTree = "<group>"; };
+		815871A4202526390033AB39 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		815871B020265FF80033AB39 /* TurnAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnAction.swift; sourceTree = "<group>"; };
+		815871B2202660650033AB39 /* RestartAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartAction.swift; sourceTree = "<group>"; };
+		815871B42026609C0033AB39 /* GameReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducer.swift; sourceTree = "<group>"; };
+		815871BA202661390033AB39 /* WarmupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarmupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		815871BC202661390033AB39 /* WarmupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupTests.swift; sourceTree = "<group>"; };
+		815871BE202661390033AB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815CE8A1202BB89A000CEA38 /* ReSwiftRouter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwiftRouter.framework; path = Carthage/Build/iOS/ReSwiftRouter.framework; sourceTree = "<group>"; };
+		8186C164202CE10600846375 /* ToDo Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8186C1CC202CE7D500846375 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8186C1CD202CE7D500846375 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8186C1CE202CE7D500846375 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8186C1CF202CE7D500846375 /* NetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		8186C1D1202CE7D500846375 /* AllTaskNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllTaskNetworkTask.swift; sourceTree = "<group>"; };
+		8186C1D2202CE7D500846375 /* CreateTaskNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskNetworkTask.swift; sourceTree = "<group>"; };
+		8186C1D3202CE7D500846375 /* RemoveTaskNetworkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveTaskNetworkTask.swift; sourceTree = "<group>"; };
+		8186C1E6202CE7E200846375 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		8186C1E7202CE7E200846375 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8186C1EA202CE7E200846375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8186C1EC202CE7E200846375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8186C1EF202CE7E200846375 /* AddTaskAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskAction.swift; sourceTree = "<group>"; };
+		8186C1F0202CE7E200846375 /* CreateTaskAsyncAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskAsyncAction.swift; sourceTree = "<group>"; };
+		8186C1F1202CE7E200846375 /* CreatingTaskAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingTaskAction.swift; sourceTree = "<group>"; };
+		8186C1F2202CE7E200846375 /* GetTasksAsyncAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTasksAsyncAction.swift; sourceTree = "<group>"; };
+		8186C1F3202CE7E200846375 /* LoadTasksAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTasksAction.swift; sourceTree = "<group>"; };
+		8186C1F4202CE7E200846375 /* RemoveTaskAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveTaskAction.swift; sourceTree = "<group>"; };
+		8186C1F5202CE7E200846375 /* RemoveTaskAsyncAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveTaskAsyncAction.swift; sourceTree = "<group>"; };
+		8186C1F6202CE7E200846375 /* SetTasksAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTasksAction.swift; sourceTree = "<group>"; };
+		8186C1F7202CE7E200846375 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		8186C1F8202CE7E200846375 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8186C1FA202CE7E200846375 /* TaskCreationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationReducer.swift; sourceTree = "<group>"; };
+		8186C1FB202CE7E200846375 /* TasksReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksReducer.swift; sourceTree = "<group>"; };
+		8186C1FD202CE7E200846375 /* TaskCreationViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationViewState.swift; sourceTree = "<group>"; };
+		8186C1FE202CE7E200846375 /* TasksState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksState.swift; sourceTree = "<group>"; };
+		8186C1FF202CE7E200846375 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8186C201202CE7E200846375 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		8186C205202CE7E200846375 /* DetailTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
+		8186C206202CE7E200846375 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		8186C232202CE7F200846375 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		8186C233202CE7F200846375 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8186C234202CE7F200846375 /* AppRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
+		8186C237202CE7F200846375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8186C239202CE7F200846375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8186C23C202CE7F200846375 /* AddTaskAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskAction.swift; sourceTree = "<group>"; };
+		8186C23D202CE7F200846375 /* CreateTaskAsyncAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskAsyncAction.swift; sourceTree = "<group>"; };
+		8186C23E202CE7F200846375 /* CreatingTaskAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingTaskAction.swift; sourceTree = "<group>"; };
+		8186C23F202CE7F200846375 /* GetTasksAsyncAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTasksAsyncAction.swift; sourceTree = "<group>"; };
+		8186C240202CE7F200846375 /* LoadTasksAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTasksAction.swift; sourceTree = "<group>"; };
+		8186C241202CE7F200846375 /* RemoveTaskAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveTaskAction.swift; sourceTree = "<group>"; };
+		8186C242202CE7F200846375 /* RemoveTaskAsyncAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveTaskAsyncAction.swift; sourceTree = "<group>"; };
+		8186C243202CE7F200846375 /* SetTasksAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTasksAction.swift; sourceTree = "<group>"; };
+		8186C244202CE7F200846375 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		8186C245202CE7F200846375 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8186C247202CE7F200846375 /* TaskCreationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationReducer.swift; sourceTree = "<group>"; };
+		8186C248202CE7F200846375 /* TasksReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksReducer.swift; sourceTree = "<group>"; };
+		8186C24A202CE7F200846375 /* TaskCreationViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreationViewState.swift; sourceTree = "<group>"; };
+		8186C24B202CE7F200846375 /* TasksState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksState.swift; sourceTree = "<group>"; };
+		8186C24C202CE7F200846375 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8186C24E202CE7F200846375 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
+		8186C252202CE7F200846375 /* DetailTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
+		8186C253202CE7F200846375 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		8186C26F202CEA1800846375 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		8186C270202CEA1800846375 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		8186C275202CF57400846375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		818E4B462027B8750005EAA0 /* LabelButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonNode.swift; sourceTree = "<group>"; };
+		818F144E2028FF0800CDB84A /* GameConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstant.swift; sourceTree = "<group>"; };
+		81A14030201FC39C00103DF5 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8107885B20193A3A00980C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A14031201FC39C00103DF5 /* ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81118EAE2023ACC100494EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81118ECA2023AEA800494EB6 /* ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815871B7202661390033AB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818F144D2028F7D300CDB84A /* ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8186C161202CE10600846375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8186C1C8202CE63700846375 /* ReSwift.framework in Frameworks */,
+				8186C1C7202CE63700846375 /* ReSwiftRouter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8107885520193A3A00980C57 = {
+			isa = PBXGroup;
+			children = (
+				81118EB22023ACC100494EB6 /* Warmup */,
+				8107886020193A3A00980C57 /* ToDo */,
+				815871BB202661390033AB39 /* WarmupTests */,
+				8107885F20193A3A00980C57 /* Products */,
+				81A1402F201FC39C00103DF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8107885F20193A3A00980C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8107885E20193A3A00980C57 /* ToDo.app */,
+				81118EB12023ACC100494EB6 /* Warmup.app */,
+				815871BA202661390033AB39 /* WarmupTests.xctest */,
+				8186C164202CE10600846375 /* ToDo Router.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8107886020193A3A00980C57 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1C9202CE7D500846375 /* Shared */,
+				8186C1E5202CE7E200846375 /* Normal */,
+				8186C231202CE7F200846375 /* Router */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		81118EB22023ACC100494EB6 /* Warmup */ = {
+			isa = PBXGroup;
+			children = (
+				8158719E20251F9C0033AB39 /* Elements */,
+				815871A32025262A0033AB39 /* Core */,
+				81118EB32023ACC100494EB6 /* AppDelegate.swift */,
+				818F144E2028FF0800CDB84A /* GameConstant.swift */,
+				81118EB92023ACC100494EB6 /* GameScene.swift */,
+				81118EBB2023ACC100494EB6 /* GameViewController.swift */,
+				81118EBD2023ACC100494EB6 /* Main.storyboard */,
+				81118EC02023ACC100494EB6 /* Assets.xcassets */,
+				81118EC22023ACC100494EB6 /* LaunchScreen.storyboard */,
+				81118EC52023ACC100494EB6 /* Info.plist */,
+			);
+			path = Warmup;
+			sourceTree = "<group>";
+		};
+		8158719E20251F9C0033AB39 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				8158719C202506FE0033AB39 /* BoardNode.swift */,
+				8158719F20251FAF0033AB39 /* CrossNode.swift */,
+				815871A12025227F0033AB39 /* CircleNode.swift */,
+				818E4B462027B8750005EAA0 /* LabelButtonNode.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		815871A32025262A0033AB39 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				815871AF20265F8C0033AB39 /* Actions */,
+				815871A4202526390033AB39 /* GameState.swift */,
+				815871B42026609C0033AB39 /* GameReducer.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		815871AF20265F8C0033AB39 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				815871B020265FF80033AB39 /* TurnAction.swift */,
+				815871B2202660650033AB39 /* RestartAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		815871BB202661390033AB39 /* WarmupTests */ = {
+			isa = PBXGroup;
+			children = (
+				815871BC202661390033AB39 /* WarmupTests.swift */,
+				815871BE202661390033AB39 /* Info.plist */,
+			);
+			path = WarmupTests;
+			sourceTree = "<group>";
+		};
+		8186C1C9202CE7D500846375 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8186C26E202CEA1800846375 /* DatePicker */,
+				8186C1CA202CE7D500846375 /* Network */,
+				8186C275202CF57400846375 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8186C1CA202CE7D500846375 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1CB202CE7D500846375 /* Model */,
+				8186C1CD202CE7D500846375 /* NetworkError.swift */,
+				8186C1CE202CE7D500846375 /* NetworkService.swift */,
+				8186C1CF202CE7D500846375 /* NetworkTask.swift */,
+				8186C1D0202CE7D500846375 /* Task */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8186C1CB202CE7D500846375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1CC202CE7D500846375 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8186C1D0202CE7D500846375 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1D1202CE7D500846375 /* AllTaskNetworkTask.swift */,
+				8186C1D2202CE7D500846375 /* CreateTaskNetworkTask.swift */,
+				8186C1D3202CE7D500846375 /* RemoveTaskNetworkTask.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		8186C1E5202CE7E200846375 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1ED202CE7E200846375 /* Core */,
+				8186C200202CE7E200846375 /* Main */,
+				8186C1E6202CE7E200846375 /* AppConstant.swift */,
+				8186C1E7202CE7E200846375 /* AppDelegate.swift */,
+				8186C1EB202CE7E200846375 /* Main.storyboard */,
+				8186C1E9202CE7E200846375 /* LaunchScreen.storyboard */,
+				8186C1FF202CE7E200846375 /* Info.plist */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		8186C1ED202CE7E200846375 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1EE202CE7E200846375 /* Actions */,
+				8186C1F9202CE7E200846375 /* Reducers */,
+				8186C1FC202CE7E200846375 /* States */,
+				8186C1F7202CE7E200846375 /* AppReducer.swift */,
+				8186C1F8202CE7E200846375 /* AppState.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8186C1EE202CE7E200846375 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1F2202CE7E200846375 /* GetTasksAsyncAction.swift */,
+				8186C1F0202CE7E200846375 /* CreateTaskAsyncAction.swift */,
+				8186C1F5202CE7E200846375 /* RemoveTaskAsyncAction.swift */,
+				8186C1F1202CE7E200846375 /* CreatingTaskAction.swift */,
+				8186C1F3202CE7E200846375 /* LoadTasksAction.swift */,
+				8186C1F6202CE7E200846375 /* SetTasksAction.swift */,
+				8186C1EF202CE7E200846375 /* AddTaskAction.swift */,
+				8186C1F4202CE7E200846375 /* RemoveTaskAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		8186C1F9202CE7E200846375 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1FA202CE7E200846375 /* TaskCreationReducer.swift */,
+				8186C1FB202CE7E200846375 /* TasksReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		8186C1FC202CE7E200846375 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				8186C1FD202CE7E200846375 /* TaskCreationViewState.swift */,
+				8186C1FE202CE7E200846375 /* TasksState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		8186C200202CE7E200846375 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8186C201202CE7E200846375 /* CreateTaskViewController.swift */,
+				8186C205202CE7E200846375 /* DetailTaskViewController.swift */,
+				8186C206202CE7E200846375 /* TasksViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8186C231202CE7F200846375 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8186C23A202CE7F200846375 /* Core */,
+				8186C24D202CE7F200846375 /* Main */,
+				8186C232202CE7F200846375 /* AppConstant.swift */,
+				8186C233202CE7F200846375 /* AppDelegate.swift */,
+				8186C234202CE7F200846375 /* AppRoutes.swift */,
+				81326D5B202F8BDB00353448 /* UINavigationController+Completion.swift */,
+				8186C238202CE7F200846375 /* Main.storyboard */,
+				8186C236202CE7F200846375 /* LaunchScreen.storyboard */,
+				8186C24C202CE7F200846375 /* Info.plist */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8186C23A202CE7F200846375 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8186C23B202CE7F200846375 /* Actions */,
+				8186C246202CE7F200846375 /* Reducers */,
+				8186C249202CE7F200846375 /* States */,
+				8186C244202CE7F200846375 /* AppReducer.swift */,
+				8186C245202CE7F200846375 /* AppState.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8186C23B202CE7F200846375 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				8186C23F202CE7F200846375 /* GetTasksAsyncAction.swift */,
+				8186C23D202CE7F200846375 /* CreateTaskAsyncAction.swift */,
+				8186C242202CE7F200846375 /* RemoveTaskAsyncAction.swift */,
+				8186C23E202CE7F200846375 /* CreatingTaskAction.swift */,
+				8186C240202CE7F200846375 /* LoadTasksAction.swift */,
+				8186C243202CE7F200846375 /* SetTasksAction.swift */,
+				8186C23C202CE7F200846375 /* AddTaskAction.swift */,
+				8186C241202CE7F200846375 /* RemoveTaskAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		8186C246202CE7F200846375 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				8186C247202CE7F200846375 /* TaskCreationReducer.swift */,
+				8186C248202CE7F200846375 /* TasksReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		8186C249202CE7F200846375 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				8186C24A202CE7F200846375 /* TaskCreationViewState.swift */,
+				8186C24B202CE7F200846375 /* TasksState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		8186C24D202CE7F200846375 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8186C24E202CE7F200846375 /* CreateTaskViewController.swift */,
+				8186C252202CE7F200846375 /* DetailTaskViewController.swift */,
+				8186C253202CE7F200846375 /* TasksViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8186C26E202CEA1800846375 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8186C26F202CEA1800846375 /* DatePickerViewController.swift */,
+				8186C270202CEA1800846375 /* DatePickerViewController.xib */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		81A1402F201FC39C00103DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				815CE8A1202BB89A000CEA38 /* ReSwiftRouter.framework */,
+				81A14030201FC39C00103DF5 /* ReSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8107885D20193A3A00980C57 /* ToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8107887020193A3A00980C57 /* Build configuration list for PBXNativeTarget "ToDo" */;
+			buildPhases = (
+				8107885A20193A3A00980C57 /* Sources */,
+				8107885B20193A3A00980C57 /* Frameworks */,
+				8107885C20193A3A00980C57 /* Resources */,
+				81A14032201FC3BC00103DF5 /* Carthage */,
+				81DBE247202A438F0037D257 /* Swift validation */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDo;
+			productName = Redux;
+			productReference = 8107885E20193A3A00980C57 /* ToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81118EB02023ACC100494EB6 /* Warmup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81118EC82023ACC100494EB6 /* Build configuration list for PBXNativeTarget "Warmup" */;
+			buildPhases = (
+				81118EAD2023ACC100494EB6 /* Sources */,
+				81118EAE2023ACC100494EB6 /* Frameworks */,
+				81118EAF2023ACC100494EB6 /* Resources */,
+				81118EC92023ACD300494EB6 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Warmup;
+			productName = Warmup;
+			productReference = 81118EB12023ACC100494EB6 /* Warmup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		815871B9202661390033AB39 /* WarmupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 815871C1202661390033AB39 /* Build configuration list for PBXNativeTarget "WarmupTests" */;
+			buildPhases = (
+				815871B6202661390033AB39 /* Sources */,
+				815871B7202661390033AB39 /* Frameworks */,
+				815871B8202661390033AB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				815871C0202661390033AB39 /* PBXTargetDependency */,
+			);
+			name = WarmupTests;
+			productName = WarmupTests;
+			productReference = 815871BA202661390033AB39 /* WarmupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8186C163202CE10600846375 /* ToDo Router */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8186C173202CE10600846375 /* Build configuration list for PBXNativeTarget "ToDo Router" */;
+			buildPhases = (
+				8186C160202CE10600846375 /* Sources */,
+				8186C161202CE10600846375 /* Frameworks */,
+				8186C162202CE10600846375 /* Resources */,
+				8186C1C6202CE5EA00846375 /* Carthage */,
+				8186C1C5202CE5D500846375 /* Swift validation */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ToDo Router";
+			productName = "ToDo Router";
+			productReference = 8186C164202CE10600846375 /* ToDo Router.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8107885620193A3A00980C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Oink oink";
+				TargetAttributes = {
+					8107885D20193A3A00980C57 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					81118EB02023ACC100494EB6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					815871B9202661390033AB39 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 81118EB02023ACC100494EB6;
+					};
+					8186C163202CE10600846375 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8107885920193A3A00980C57 /* Build configuration list for PBXProject "Redux" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8107885520193A3A00980C57;
+			productRefGroup = 8107885F20193A3A00980C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81118EB02023ACC100494EB6 /* Warmup */,
+				8107885D20193A3A00980C57 /* ToDo */,
+				8186C163202CE10600846375 /* ToDo Router */,
+				815871B9202661390033AB39 /* WarmupTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8107885C20193A3A00980C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8186C273202CEA1800846375 /* DatePickerViewController.xib in Resources */,
+				8186C215202CE7E200846375 /* Main.storyboard in Resources */,
+				8186C276202CF57400846375 /* Assets.xcassets in Resources */,
+				8186C214202CE7E200846375 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81118EAF2023ACC100494EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81118EBF2023ACC100494EB6 /* Main.storyboard in Resources */,
+				81118EC12023ACC100494EB6 /* Assets.xcassets in Resources */,
+				81118EC42023ACC100494EB6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815871B8202661390033AB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8186C162202CE10600846375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8186C274202CEA1800846375 /* DatePickerViewController.xib in Resources */,
+				8186C259202CE7F300846375 /* Main.storyboard in Resources */,
+				8186C277202CF57400846375 /* Assets.xcassets in Resources */,
+				8186C258202CE7F300846375 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81118EC92023ACD300494EB6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		8186C1C5202CE5D500846375 /* Swift validation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift validation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		8186C1C6202CE5EA00846375 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwiftRouter.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwiftRouter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		81A14032201FC3BC00103DF5 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwiftRouter.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwiftRouter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		81DBE247202A438F0037D257 /* Swift validation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift validation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8107885A20193A3A00980C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8186C21B202CE7E200846375 /* RemoveTaskAction.swift in Sources */,
+				8186C211202CE7E200846375 /* AppConstant.swift in Sources */,
+				8186C223202CE7E200846375 /* TasksState.swift in Sources */,
+				8186C1DD202CE7D500846375 /* AllTaskNetworkTask.swift in Sources */,
+				8186C221202CE7E200846375 /* TasksReducer.swift in Sources */,
+				8186C1D5202CE7D500846375 /* Task.swift in Sources */,
+				8186C271202CEA1800846375 /* DatePickerViewController.swift in Sources */,
+				8186C1DF202CE7D500846375 /* CreateTaskNetworkTask.swift in Sources */,
+				8186C1E1202CE7D500846375 /* RemoveTaskNetworkTask.swift in Sources */,
+				8186C218202CE7E200846375 /* CreatingTaskAction.swift in Sources */,
+				8186C228202CE7E200846375 /* DetailTaskViewController.swift in Sources */,
+				8186C216202CE7E200846375 /* AddTaskAction.swift in Sources */,
+				8186C219202CE7E200846375 /* GetTasksAsyncAction.swift in Sources */,
+				8186C1DB202CE7D500846375 /* NetworkTask.swift in Sources */,
+				8186C220202CE7E200846375 /* TaskCreationReducer.swift in Sources */,
+				8186C222202CE7E200846375 /* TaskCreationViewState.swift in Sources */,
+				8186C229202CE7E200846375 /* TasksViewController.swift in Sources */,
+				8186C21F202CE7E200846375 /* AppState.swift in Sources */,
+				8186C21D202CE7E200846375 /* SetTasksAction.swift in Sources */,
+				8186C1D9202CE7D500846375 /* NetworkService.swift in Sources */,
+				8186C21A202CE7E200846375 /* LoadTasksAction.swift in Sources */,
+				8186C21C202CE7E200846375 /* RemoveTaskAsyncAction.swift in Sources */,
+				8186C217202CE7E200846375 /* CreateTaskAsyncAction.swift in Sources */,
+				8186C212202CE7E200846375 /* AppDelegate.swift in Sources */,
+				8186C21E202CE7E200846375 /* AppReducer.swift in Sources */,
+				8186C1D7202CE7D500846375 /* NetworkError.swift in Sources */,
+				8186C225202CE7E200846375 /* CreateTaskViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81118EAD2023ACC100494EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8158719D202506FE0033AB39 /* BoardNode.swift in Sources */,
+				818F144F2028FF0800CDB84A /* GameConstant.swift in Sources */,
+				81118EBA2023ACC100494EB6 /* GameScene.swift in Sources */,
+				815871B120265FF80033AB39 /* TurnAction.swift in Sources */,
+				81118EBC2023ACC100494EB6 /* GameViewController.swift in Sources */,
+				815871A22025227F0033AB39 /* CircleNode.swift in Sources */,
+				815871A020251FAF0033AB39 /* CrossNode.swift in Sources */,
+				815871B52026609C0033AB39 /* GameReducer.swift in Sources */,
+				815871B3202660650033AB39 /* RestartAction.swift in Sources */,
+				818E4B472027B8750005EAA0 /* LabelButtonNode.swift in Sources */,
+				815871A5202526390033AB39 /* GameState.swift in Sources */,
+				81118EB42023ACC100494EB6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		815871B6202661390033AB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815871BD202661390033AB39 /* WarmupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8186C160202CE10600846375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8186C254202CE7F300846375 /* AppConstant.swift in Sources */,
+				8186C1DE202CE7D500846375 /* AllTaskNetworkTask.swift in Sources */,
+				8186C256202CE7F300846375 /* AppRoutes.swift in Sources */,
+				8186C25F202CE7F300846375 /* RemoveTaskAction.swift in Sources */,
+				8186C25E202CE7F300846375 /* LoadTasksAction.swift in Sources */,
+				8186C25A202CE7F300846375 /* AddTaskAction.swift in Sources */,
+				8186C25D202CE7F300846375 /* GetTasksAsyncAction.swift in Sources */,
+				81326D5C202F8BDB00353448 /* UINavigationController+Completion.swift in Sources */,
+				8186C1D6202CE7D500846375 /* Task.swift in Sources */,
+				8186C263202CE7F300846375 /* AppState.swift in Sources */,
+				8186C26D202CE7F300846375 /* TasksViewController.swift in Sources */,
+				8186C266202CE7F300846375 /* TaskCreationViewState.swift in Sources */,
+				8186C267202CE7F300846375 /* TasksState.swift in Sources */,
+				8186C1E0202CE7D500846375 /* CreateTaskNetworkTask.swift in Sources */,
+				8186C1E2202CE7D500846375 /* RemoveTaskNetworkTask.swift in Sources */,
+				8186C265202CE7F300846375 /* TasksReducer.swift in Sources */,
+				8186C260202CE7F300846375 /* RemoveTaskAsyncAction.swift in Sources */,
+				8186C1DC202CE7D500846375 /* NetworkTask.swift in Sources */,
+				8186C25B202CE7F300846375 /* CreateTaskAsyncAction.swift in Sources */,
+				8186C262202CE7F300846375 /* AppReducer.swift in Sources */,
+				8186C1DA202CE7D500846375 /* NetworkService.swift in Sources */,
+				8186C25C202CE7F300846375 /* CreatingTaskAction.swift in Sources */,
+				8186C26C202CE7F300846375 /* DetailTaskViewController.swift in Sources */,
+				8186C269202CE7F300846375 /* CreateTaskViewController.swift in Sources */,
+				8186C264202CE7F300846375 /* TaskCreationReducer.swift in Sources */,
+				8186C272202CEA1800846375 /* DatePickerViewController.swift in Sources */,
+				8186C261202CE7F300846375 /* SetTasksAction.swift in Sources */,
+				8186C255202CE7F300846375 /* AppDelegate.swift in Sources */,
+				8186C1D8202CE7D500846375 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		815871C0202661390033AB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81118EB02023ACC100494EB6 /* Warmup */;
+			targetProxy = 815871BF202661390033AB39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81118EBD2023ACC100494EB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81118EBE2023ACC100494EB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81118EC22023ACC100494EB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81118EC32023ACC100494EB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8186C1E9202CE7E200846375 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8186C1EA202CE7E200846375 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8186C1EB202CE7E200846375 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8186C1EC202CE7E200846375 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8186C236202CE7F200846375 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8186C237202CE7F200846375 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8186C238202CE7F200846375 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8186C239202CE7F200846375 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8107886E20193A3A00980C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8107886F20193A3A00980C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8107887120193A3A00980C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ToDo/Normal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.redux.ToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8107887220193A3A00980C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ToDo/Normal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.redux.ToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		81118EC62023ACC100494EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Warmup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.redux.Warmup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		81118EC72023ACC100494EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Warmup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.redux.Warmup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		815871C2202661390033AB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WarmupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.redux.WarmupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Warmup.app/Warmup";
+			};
+			name = Debug;
+		};
+		815871C3202661390033AB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WarmupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.redux.WarmupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Warmup.app/Warmup";
+			};
+			name = Release;
+		};
+		8186C174202CE10600846375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ToDo/Router/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.redux.ToDo-Router";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8186C175202CE10600846375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN5ELANA7L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ToDo/Router/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.redux.ToDo-Router";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8107885920193A3A00980C57 /* Build configuration list for PBXProject "Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8107886E20193A3A00980C57 /* Debug */,
+				8107886F20193A3A00980C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8107887020193A3A00980C57 /* Build configuration list for PBXNativeTarget "ToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8107887120193A3A00980C57 /* Debug */,
+				8107887220193A3A00980C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81118EC82023ACC100494EB6 /* Build configuration list for PBXNativeTarget "Warmup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81118EC62023ACC100494EB6 /* Debug */,
+				81118EC72023ACC100494EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		815871C1202661390033AB39 /* Build configuration list for PBXNativeTarget "WarmupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				815871C2202661390033AB39 /* Debug */,
+				815871C3202661390033AB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8186C173202CE10600846375 /* Build configuration list for PBXNativeTarget "ToDo Router" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8186C174202CE10600846375 /* Debug */,
+				8186C175202CE10600846375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8107885620193A3A00980C57 /* Project object */;
+}

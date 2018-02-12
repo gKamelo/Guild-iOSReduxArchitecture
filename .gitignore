@@ -1,0 +1,46 @@
+# Carthage
+Carthage
+
+# Exclude the build directory
+build/*
+DerivedData/
+*.build/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Xcode Patch
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+
+# OSX noise
+.DS_Store
+*.swp
+profile
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.mobileprovision
