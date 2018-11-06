@@ -37,7 +37,7 @@ final class DetailTaskViewController: UIViewController, StoreSubscriber {
         store.unsubscribe(self)
     }
 
-    override func didMove(toParentViewController parent: UIViewController?) {
+    override func didMove(toParent parent: UIViewController?) {
         if parent == nil {
             /// COMMENT:
             /// Apple magic require to update the route,

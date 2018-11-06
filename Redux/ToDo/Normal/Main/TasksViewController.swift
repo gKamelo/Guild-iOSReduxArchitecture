@@ -96,7 +96,7 @@ final class TasksViewController: UIViewController, UITableViewDelegate, UITableV
 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 
-        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { [weak self] (_, index) in
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { [weak self] _, index in
             guard let `self` = self, indexPath == index else { return }
 
             let removeTaskAsyncAction = RemoveTaskAsyncAction(networkService: self.networkServie, index: index.row, identifier: self.tasks[index.row].id)

@@ -44,8 +44,8 @@ final class CreateTaskViewController: UIViewController, UITextViewDelegate, Date
         self.updateCreateAvailablity()
         self.updateDateField()
 
-        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardShowNotification(notification:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardHideNotification(notification:)), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardShowNotification(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardHideNotification(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
